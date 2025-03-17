@@ -413,6 +413,10 @@ li:has(a) {
     nav ul {
         gap: 14px;
     }
+    
+    .theme-toggle-container {
+        display: none;
+    }
 
     #profile-section {
         flex-direction: column;
