@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Social media links">
             <ul>
                 <li><a href="https://www.linkedin.com/in/nicholas-ngyn" target="_blank">
                     <i class="fab fa-linkedin"></i> LinkedIn
@@ -34,11 +34,11 @@
                     <i class="fab fa-github"></i> GitHub
                 </a></li>
             </ul>
-            <div class="theme-toggle-container">
-                <button id="theme-toggle" aria-label="Toggle theme">
+            <aside class="theme-toggle-container">
+                <button id="theme-toggle" aria-label="Toggle dark/light theme">
                     🌙
                 </button>
-            </div>
+            </aside>
         </nav>
     </header>
 
@@ -50,15 +50,15 @@
             </hgroup>
         </section>
         <hr>
-        <section id="profile-section">
-            <div id="profile-picture">
+        <section id="profile-section" aria-label="Profile Information">
+            <figure id="profile-picture">
                 <picture>
                     <source srcset="images/pfpcool-small.jpg 480w, images/pfpcool-medium.jpg 800w, images/pfpcool.jpg 1200w" 
                             type="image/jpeg">
                     <img src="images/pfpcool.jpg" alt="Nicholas Nguyen's profile picture">
                 </picture>
-            </div>       
-            <div id="about-me">
+            </figure>       
+            <article id="about-me">
                 <h2>About Me</h2>
                 <p>
                     Hi, I'm Nicholas Nguyen.
@@ -69,12 +69,12 @@
                     <br>
                     <span>Please shoot me an email if you're hiring!</span>
                 </p>
-            </div>     
+            </article>     
         </section>
         <hr>
-        <section id="skills">
+        <section id="skills" aria-label="Technical Skills">
             <h2>Skills</h2>
-            <ul class="skill-list">
+            <ul class="skill-list" aria-label="Skills proficiency levels">
                 <li class="bar java-bar">
                     <span class="bar-label">Java</span>
                     <span>Expert</span>
@@ -98,7 +98,7 @@
             </ul>
         </section>
         <hr>
-        <section id="projects">
+        <section id="projects" aria-label="Featured Projects">
             <h2>My Projects</h2>
             <div class="projects-container">
                 <article class="project-card">
@@ -146,7 +146,7 @@
             Let's <span class="solve">solve</span> problems together!
         </p>
     
-        <ul class="contact-buttons">
+        <ul class="contact-buttons" aria-label="Social media links">
             <li>
                 <a href="https://www.linkedin.com/in/nicholas-ngyn" target="_blank" class="contact-button" aria-label="LinkedIn">
                     <svg 
