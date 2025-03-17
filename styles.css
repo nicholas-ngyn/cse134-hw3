@@ -1,19 +1,22 @@
 :root {
-    --primary-color: #0073e6;
+    --primary-color: #0084ff;
     --secondary-color: #2c2c2c;
-    --text-color: #f0f0f0;
+    --text-color: #f8f8f8;
     --background-color: #121212;
-    --accent-color: #ffcc00;
+    --accent-color: #ffd700;
     --border-radius: 8px;
     --transition-speed: 0.3s;
+    --transition-function: ease;
+    --transition-property: all;
 }
+
 
 body.light-theme {
     --background-color: #ffffff;
     --text-color: #121212;
-    --secondary-color: #f0f0f0;
-    --primary-color: #0073e6;
-    --accent-color: #ffcc00;
+    --secondary-color: #e8e8e8;
+    --primary-color: #0062cc;
+    --accent-color: #d4a500;
 }
 
 @font-face {
@@ -82,7 +85,7 @@ nav a {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: color var(--transition-speed, 0.3s);
+    transition: var(--transition-property) var(--transition-speed) var(--transition-function);
 }
 
 nav a:hover {
@@ -103,7 +106,7 @@ nav a i {
     border: none;
     font-size: 1.5em;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-speed) var(--transition-function);
 }
 
 #theme-toggle:hover {
@@ -142,7 +145,7 @@ picture img {
     object-position: center;
     border-radius: 50%;
     border: 3px solid var(--primary-color, #0073e6);
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-speed) var(--transition-function);
 }
 
 picture img:hover {
@@ -153,7 +156,7 @@ picture img:hover {
     flex: 1;
     max-width: 550px;
     background-color: white;
-    color: black;
+    color: #111111;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -277,7 +280,7 @@ picture img:hover {
     width: 300px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform var(--transition-speed) var(--transition-function), box-shadow var(--transition-speed) var(--transition-function);
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeIn 0.8s ease-out forwards;
@@ -320,7 +323,7 @@ figcaption h3 {
 
 figcaption .description {
     font-size: 1rem;
-    color: #555;
+    color: #333;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -336,7 +339,7 @@ figcaption .description {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    transition: background-color var(--transition-speed, 0.3s), transform var(--transition-speed, 0.3s);
+    transition: background-color var(--transition-speed) var(--transition-function), transform var(--transition-speed) var(--transition-function);
 }
 
 .github-link:hover {
@@ -363,7 +366,8 @@ footer p {
 }
 
 footer span {
-    color: color(display-p3 0.6 0.6 0);
+    color: #ffd700;
+    font-weight: bold;
 }
 
 footer .solve {
@@ -406,7 +410,7 @@ footer .solve {
     border-radius: 50%;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform var(--transition-speed) var(--transition-function), box-shadow var(--transition-speed) var(--transition-function);
 }
 
 .contact-button:hover {
