@@ -400,11 +400,6 @@ li:has(a) {
         height: auto;
     }
 
-    #resume-container iframe {
-        width: 100%;
-        height: 225px;
-    }
-
     #intro h1 {
         font-size: 1.5rem;
     }
